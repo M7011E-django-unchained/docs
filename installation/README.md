@@ -2,7 +2,7 @@
 
 Here comes information about what to do before installing and running the system and how to run it.
 
-## Create .env file in the same folder as the docker-compose.yml are containing
+## Create .env file in the same folder as the docker-compose.yml are 
 
 ```env
 DATABASE_URL = [your mongodb url]
