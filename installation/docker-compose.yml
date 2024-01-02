@@ -3,14 +3,14 @@ services:
   trading_api:
     build:
       context: https://github.com/M7011E-django-unchained/trading_api.git
-    # volumes:
-    #   - .:/usr/src/app
     image: m7011e-django-unchained/trading_api
+    volumes:
+      - ./db.sqlite3:/usr/src/app/db.sqlite3
     container_name: trading_api-container
     restart: always
     ports:
       - 8000:8000
-    command: bash -c "python manage.py makemigrations && python manage.py migrate"
+    # command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
 
   bidding_system:
     image: m7011e-django-unchained/bidding_system
@@ -18,8 +18,6 @@ services:
     restart: always
     build: 
       context: https://github.com/M7011E-django-unchained/bidding-system.git
-    # volumes:
-    #   - .:/usr/src/bidding-system
     ports:
       - 5000:5000
     command: bash -c "chmod +x /usr/src/bidding-system/start.sh && /usr/src/bidding-system/start.sh"
