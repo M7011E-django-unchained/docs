@@ -4,12 +4,14 @@ Here comes information about what to do before installing and running the system
 
 ## Create .env file in the same folder as the docker-compose.yml are 
 
+`.env` file should look like this:
+
 ```env
 DATABASE_URL = [your mongodb url]
 PORT = 5000
 NODE_ENV = production
 DJANGO_API_PORT = 8000
-DJANGO_API_TOKEN_VERIFICATION_URL = http://127.0.0.1:8000/user/token/verify/
+DJANGO_API_TOKEN_VERIFICATION_URL = http://trading-api:8000/user/token/verify/
 ```
 
 ## Add db.sqlite3 file to the same folder as the docker-compose.yml are
