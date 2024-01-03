@@ -1,15 +1,21 @@
 # Installation
 
-Here comes information about what to do before installing and running the system and how to run it.
+Here comes information about what to do before installing and running the system and how to run it. **NOTE!** This installation is for product environment and pulls images directly from stable branches on github repositories and do not require the user to have all code locally on their own computer. 
 
-## Create .env file in the same folder as the docker-compose.yml are containing
+## Make sure docker is installed and running
+
+If docker is not installed, it can be installed from [here](https://docs.docker.com/engine/install/).
+
+## Create .env file in the same folder as the docker-compose.yml are 
+
+`.env` file should look like this:
 
 ```env
 DATABASE_URL = [your mongodb url]
 PORT = 5000
 NODE_ENV = production
 DJANGO_API_PORT = 8000
-DJANGO_API_TOKEN_VERIFICATION_URL = http://127.0.0.1:8000/user/token/verify/
+DJANGO_API_TOKEN_VERIFICATION_URL = http://trading-api:8000/user/token/verify/
 ```
 
 ## Add db.sqlite3 file to the same folder as the docker-compose.yml are
@@ -18,4 +24,4 @@ Either start out with an fresh one or use one provided with some data. Beware, t
 
 ## Run all software in one go
 
-`docker-compose up`
+`docker compose up`
