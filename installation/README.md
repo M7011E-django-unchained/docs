@@ -2,6 +2,10 @@
 
 Here comes information about what to do before installing and running the system and how to run it.
 
+## Make sure docker is installed and running
+
+If docker is not installed, it can be installed from [here](https://docs.docker.com/engine/install/).
+
 ## Create .env file in the same folder as the docker-compose.yml are 
 
 `.env` file should look like this:
@@ -20,4 +24,4 @@ Either start out with an fresh one or use one provided with some data. Beware, t
 
 ## Run all software in one go
 
-`docker-compose up`
+`docker compose up`
