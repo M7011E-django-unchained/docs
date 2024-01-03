@@ -1,6 +1,6 @@
 # Installation
 
-Here comes information about what to do before installing and running the system and how to run it.
+Here comes information about what to do before installing and running the system and how to run it. **NOTE!** This installation is for product environment and pulls images directly from stable branches on github repositories and do not require the user to have all code locally on their own computer. 
 
 ## Make sure docker is installed and running
 
