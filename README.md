@@ -7,6 +7,10 @@ In this repository one can find information about how to quick-install the whole
 - Casper Lundberg
 - Johnny Lam
 
+## Github Organization
+
+<https://github.com/M7011E-django-unchained>
+
 ## Roadmap
 
 ### /images
